@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fav-icon.png" type="image/x-icon">
+    <title>Meal Finder</title>
+    <script src="https://kit.fontawesome.com/1a475d1a3c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"></head>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+         <!-- this is the main heading container to this webpage -->
+         <!-- this container consists the headings -->
+        <div id="main_heading">
+            <h1 class="display-1 text-center">Meal Finder</h1>
+            <p class="lead text-center">Find the perfect meal to dine upon</p>
+         <!-- <div class="favorites"></div> -->
+        </div>
+           <!-- the main container consist of the page main contant -->
+        <div id="main_container">
+         <div id="sub_div">
+             <input type="text"  id="autocomplete_input" placeholder="Type the name of dish you want to search for and press Enter ...">
+              <ul id="autocomplete_list">
+              <!-- <li><button id></button></li> -->
+           </ul>
+        </div>
+         <div id="favoriteList_icon">
+             <span id="fav_click"> 
+                 <i class="fa-solid fa-heart"></i><span id="fav_text">Favorites</span>
+             </span>
+         </div>
+       </div>
+          <!-- this container is the used to display the dishes -->
+    <div class="container">
+           <div id="card-list" class="row"></div>
+          <div id="dish-area" class="my-5"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
