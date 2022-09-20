@@ -1,0 +1,285 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px 50px 20px;
+    
+}
+#main_heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.lead{
+    font-size: 2rem;
+}
+#main_container{
+    display: flex;
+    justify-content: center;
+    
+
+}
+/* #sub_div{
+    width: 300px;
+} */
+#autocomplete_input{
+    padding:7px 15px;
+     margin: 50px 0px 0px 0px;
+   width: 400px !important;
+    border-radius: 1px;
+    border: none;
+    outline: none;
+    /* color: #48438F; */
+    font-weight: bold;
+    background-color:rgb(246, 246, 246);
+}
+/* #autocomplete_input::placeholder{
+    color: #48438F;
+  } */
+
+
+#favoriteList_icon{
+    position: relative;
+    
+    top: 55px;
+    left: 60px;
+
+  }
+#fav_click{
+    cursor: pointer;
+}
+#favoriteList_icon i{
+   font-size: 25px;
+}
+#fav_text{
+    font-size: 20px;
+}
+#autocomplete_list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    
+    background-color: rgb(246, 246, 246);
+    width: 400px;
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1;
+    border-radius: 0px 0px 3px 3px;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#autocomplete_list li{
+    padding: 5px 5px 5px 15px;
+
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+#autocomplete_list li:hover{
+    background-color: lightgray;
+}
+
+
+
+
+
+.container {
+    margin-top: 60px;
+    width: 80%;
+    max-width: 2000px!important;
+}
+
+.food-card {
+    background-size: cover!important;
+    border-radius: 5px;
+    height: 300px;
+    margin-bottom: 0px;
+}
+
+.food-card-details {
+    display: none;
+}
+
+.card_bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.heart_symble i{
+ font-size: 25px;
+}
+.favorites{
+    color: lightgray;
+}
+.heart_symble i:hover{
+    cursor: pointer;
+}
+.card_bottom span{
+    font-size: 25px;
+}
+
+.food-card:hover .food-card-details {
+    position: relative;
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+    width: 100%;
+    display: flex!important;
+    flex-direction: column !important;
+    justify-content: center!important;
+    align-items: center!important;
+}
+
+.food-card:hover {
+    cursor: pointer;
+}
+
+#dish-area {
+    padding: 0px;
+    box-shadow: 2px 10px 20px rgba(0,0,0,0.5);
+    margin-top: 100px!important;
+}
+
+#recipe-header {
+    height: 500px;
+    background-size: cover!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+}
+
+#recipe {
+    padding: 50px;
+}
+
+#recipe .display-2 {
+    margin-bottom: 80px!important;
+}
+
+.ingredient-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+
+#dish-img {
+    height: 300px;
+    margin-top: -160px;
+    margin-bottom: 50px;
+    transition: all 0.2s ease-in;
+}
+
+#dish-img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.ingredient {
+    padding: 15px;
+    width: 100%;
+}
+
+.ingredient:nth-of-type(2n+1) {
+    background-color: #f5f5f5;
+}
+
+.amount {
+    float: right;
+}
+
+#steps .lead {
+    font-size: 1.4rem;
+}
+.delete_button{
+    background-color: #c70404;
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+@media (max-width: 1600px)
+{
+    .ingredient-list {
+        margin-bottom: 40px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+@media (max-width : 900px) 
+{
+    #recipe {
+        padding: 50px 0px;
+    }
+
+    .display-2 {
+        font-size: 4rem;
+    }
+    .display-1 {
+        font-size: 4.3rem;
+    }
+
+    .col-xl-3 {
+        padding: 0;
+    }
+    #recipe .display-2 {
+        margin-bottom: 40px!important;
+    }
+
+    #recipe-header {
+        height: 400px;
+    }
+
+    #food-inp {
+        width: 300px!important;
+    }
+}
+@media (max-width :650px){
+    #autocomplete_input{
+        width: 300px !important;
+    }
+    #autocomplete_list{
+        width: 300px;
+      
+    }
+}
+@media (max-width :510px){
+    #favoriteList_icon {
+        
+        left: 30px;
+    }
+    #favoriteList_icon i{
+        font-size: 20px;
+     }
+     #fav_text{
+         font-size: 20px;
+     }
+    #autocomplete_input{
+        width: 200px !important;
+    }
+    #autocomplete_list{
+        width: 200px;
+      
+    }
+}
