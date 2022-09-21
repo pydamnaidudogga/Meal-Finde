@@ -1,4 +1,4 @@
-# Meal-Finde
+# Meal-Finder
 An online recipe finder app created with Vanilla Javascript by using the MealDB API.this helps to usear to find the recipe and add them as favorits.
 
 
